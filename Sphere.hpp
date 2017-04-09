@@ -1,0 +1,8 @@
+//
+// Created by Nathan on 4/9/2017.
+//
+
+#ifndef ABSTRACT_GEOMETRY_SPHERE_HPP
+#define ABSTRACT_GEOMETRY_SPHERE_HPP
+
+#endif //ABSTRACT_GEOMETRY_SPHERE_HPP
