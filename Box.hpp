@@ -6,7 +6,7 @@
 class Box : public Geometry
 {
 public:
-    Box(std::string name, unsigned int length, unsigned int width, unsigend int height):
+    Box(std::string name, unsigned int length, unsigned int width, unsigned int height):
             m_name(name),
             m_length(length),
             m_width(width),
