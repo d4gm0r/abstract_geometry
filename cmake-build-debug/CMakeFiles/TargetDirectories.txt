@@ -1,0 +1,3 @@
+D:/Code/C++/abstract_geometry/cmake-build-debug/CMakeFiles/abstract_geometry.dir
+D:/Code/C++/abstract_geometry/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Code/C++/abstract_geometry/cmake-build-debug/CMakeFiles/rebuild_cache.dir
