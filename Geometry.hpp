@@ -14,8 +14,8 @@ public:
 protected:
     std::string m_name;
     std::string m_type;
-    unsigned double m_volume;
-    unsigned double m_surface;
+    double m_volume;
+    double m_surface;
 };
 
 #endif //ABSTRACT_GEOMETRY_GEOMETRY_HPP

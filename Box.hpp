@@ -12,12 +12,15 @@ public:
             m_width(width),
             m_height(height),
             m_type("Box")
-            {}
+    {
+        Geometry::computeSurface();
+        Geometry::computeVolume();
+    }
     virtual std::string getName() override { return m_name; }
     virtual std::string getType() override { return m_type; }
 
-    virtual unsigned int computeVolume() override;
-    virtual unsigned int computeSurface() override;
+    virtual void computeVolume() override;
+    virtual void computeSurface() override;
 
 private:
     unsigned int m_length;

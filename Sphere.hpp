@@ -10,12 +10,15 @@ public:
             m_name(name),
             m_radius(radius),
             m_type("Sphere")
-    {}
+    {
+        Geometry::computeVolume();
+        Geometry::computeSurface();
+    }
     virtual std::string getName() override { return m_name; }
     virtual std::string getType() override { return m_type; }
 
-    virtual unsigned int computeVolume() override;
-    virtual unsigned int computeSurface() override;
+    virtual void computeVolume() override;
+    virtual void computeSurface() override;
 
 private:
     unsigned int m_radius;
