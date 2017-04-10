@@ -1,12 +1,16 @@
 #include <math.h>
 #include "Sphere.hpp"
 
-void Sphere::computeVolume()
+double Sphere::computeVolume()
 {
-    m_volume = (4/3) * M_PI * m_radius.pow(3);
+    double volume = (4/3) * M_PI * m_radius.pow(3);
+
+    return volume;
 }
 
-void Sphere::computeSurface()
+double Sphere::computeSurface()
 {
-    m_surface = 4 * M_PI * m_radius * m_radius;
+    double surface = 4 * M_PI * m_radius * m_radius;
+
+    return surface;
 }

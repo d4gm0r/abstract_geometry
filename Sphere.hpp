@@ -7,18 +7,17 @@ class Sphere: public Geometry
 {
 public:
     Sphere(std::string name, unsigned int radius):
-            m_name(name),
-            m_radius(radius),
-            m_type("Sphere")
+        Geometry(name, "Sphere"),
+            //m_name(name),
+            m_radius(radius)
+            //m_type("Sphere")
     {
-        Geometry::computeVolume();
-        Geometry::computeSurface();
     }
-    virtual std::string getName() override { return m_name; }
-    virtual std::string getType() override { return m_type; }
+    std::string getName() { return m_name; }
+    std::string getType() { return m_type; }
 
-    virtual void computeVolume() override;
-    virtual void computeSurface() override;
+    double computeVolume() override;
+    double computeSurface() override;
 
 private:
     unsigned int m_radius;

@@ -1,21 +1,22 @@
 #ifndef ABSTRACT_GEOMETRY_GEOMETRY_HPP
 #define ABSTRACT_GEOMETRY_GEOMETRY_HPP
 
-class Geometry
-{
+class Geometry {
 public:
+    Geometry(std::string name, std::string type) :
+        m_name(name),
+        m_type(type)
+    {
+    }
+
     virtual std::string getName() { return m_name; }
     virtual std::string getType() { return m_type; }
-    virtual void computeVolume() override;
-    virtual void computeSurface() override;
-    virtual getVolume() { return m_volume; }
-    virtual getSurface() { return m_surface; }
+    virtual double computeVolume();
+    virtual double computeSurface();
 
 protected:
     std::string m_name;
     std::string m_type;
-    double m_volume;
-    double m_surface;
 };
 
 #endif //ABSTRACT_GEOMETRY_GEOMETRY_HPP

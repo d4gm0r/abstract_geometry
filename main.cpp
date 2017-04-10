@@ -9,8 +9,8 @@ void report(Geometry* obj)
     std::cout << "---Geometry Report---" << std::endl;
     std::cout << "Type---------: " << obj->getType() << std::endl;
     std::cout << "Name---------: " << obj->getName() << std::endl;
-    std::cout << "Volume-------: " << obj->getVolume() << std::endl;
-    std::cout << "Surface Area-: " << obj->getSurface() << std::endl;
+    std::cout << "Volume-------: " << obj->computeVolume() << std::endl;
+    std::cout << "Surface Area-: " << obj->computeSurface() << std::endl;
 }
 
 int main()
