@@ -26,6 +26,9 @@ int main()
     {
         report(item);
     }
+    for(auto item : items){
+        delete item;
+    }
 
     return 0;
 }

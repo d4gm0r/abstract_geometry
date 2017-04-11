@@ -8,11 +8,9 @@ class Box : public Geometry
 public:
     Box(std::string name, unsigned int length, unsigned int width, unsigned int height) :
         Geometry(name, "Box"),
-            //m_name(name),
             m_length(length),
             m_width(width),
             m_height(height)
-            //m_type("Box")
     {
     }
     std::string getName() { return m_name; }

@@ -6,11 +6,9 @@
 class Sphere: public Geometry
 {
 public:
-    Sphere(std::string name, unsigned int radius):
+    Sphere(std::string name, unsigned int radius) :
         Geometry(name, "Sphere"),
-            //m_name(name),
             m_radius(radius)
-            //m_type("Sphere")
     {
     }
     std::string getName() { return m_name; }

@@ -1,6 +1,8 @@
 #ifndef ABSTRACT_GEOMETRY_GEOMETRY_HPP
 #define ABSTRACT_GEOMETRY_GEOMETRY_HPP
 
+#include <string>
+
 class Geometry {
 public:
     Geometry(std::string name, std::string type) :
