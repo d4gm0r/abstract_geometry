@@ -3,16 +3,14 @@
 
 #include "Geometry.hpp"
 
-class Sphere: public Geometry
+class Sphere : public Geometry
 {
 public:
     Sphere(std::string name, unsigned int radius) :
-        Geometry(name, "Sphere"),
+            Geometry(name, "Sphere"),
             m_radius(radius)
     {
     }
-    std::string getName() { return m_name; }
-    std::string getType() { return m_type; }
 
     double computeVolume() override;
     double computeSurface() override;

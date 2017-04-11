@@ -6,15 +6,15 @@
 class Geometry {
 public:
     Geometry(std::string name, std::string type) :
-        m_name(name),
-        m_type(type)
+            m_name(name),
+            m_type(type)
     {
     }
 
-    virtual std::string getName() { return m_name; }
-    virtual std::string getType() { return m_type; }
-    virtual double computeVolume();
-    virtual double computeSurface();
+    std::string getName() { return m_name; }
+    std::string getType() { return m_type; }
+    virtual double computeVolume() = 0;
+    virtual double computeSurface() = 0;
 
 protected:
     std::string m_name;

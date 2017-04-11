@@ -4,6 +4,11 @@
 #include "Box.hpp"
 #include "Sphere.hpp"
 
+//
+// Nathan Larsen - A01532780
+// Assignment 8 - Abstract Geometry
+//
+
 void report(Geometry* obj)
 {
     std::cout << "---Geometry Report---" << std::endl;
@@ -11,6 +16,7 @@ void report(Geometry* obj)
     std::cout << "Name---------: " << obj->getName() << std::endl;
     std::cout << "Volume-------: " << obj->computeVolume() << std::endl;
     std::cout << "Surface Area-: " << obj->computeSurface() << std::endl;
+    std::cout << std::endl;
 }
 
 int main()
@@ -22,11 +28,11 @@ int main()
     items.push_back(new Sphere("Sphere 1", 5));
     items.push_back(new Sphere("Sphere 2", 6));
 
-    for(auto item : items)
+    for (auto item : items)
     {
         report(item);
     }
-    for(auto item : items){
+    for (auto item : items) {
         delete item;
     }
 

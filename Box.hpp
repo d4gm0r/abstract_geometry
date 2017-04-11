@@ -7,14 +7,12 @@ class Box : public Geometry
 {
 public:
     Box(std::string name, unsigned int length, unsigned int width, unsigned int height) :
-        Geometry(name, "Box"),
+            Geometry(name, "Box"),
             m_length(length),
             m_width(width),
             m_height(height)
     {
     }
-    std::string getName() { return m_name; }
-    std::string getType() { return m_type; }
 
     double computeVolume() override;
     double computeSurface() override;
